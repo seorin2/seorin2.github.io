@@ -15,15 +15,15 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "ko" # 타깃 국가 설정
+title                    : "rin's blog" # 블로그 이름
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Seorin"
+description              : "프로그래밍 기록"
+url                      : "https://seorin2.github.io" # 블로그 주소
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "seorin2/seorin2.github.io" # 블로그 레파지토리
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -51,8 +51,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # 사이트 우측 상단 검색 활성화
+search_full_content      : true # 제목이 아닌 내용까지 검색할 것인지 설정
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -91,12 +91,12 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+# Site Author - 사이드바에 표시되는 사이트 운영자에 대한 설명
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Seorin Kim"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" 프로필사진
+  bio              : "Hello."
+  location         : "Busan,Korea"
   email            :
   links:
     - label: "Email"
@@ -277,5 +277,5 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
+      share: false # 포스트 공유 기능 활성화 여부
       related: true
